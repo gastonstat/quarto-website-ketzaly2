@@ -1,0 +1,30 @@
+---
+title: "Projects"
+---
+
+Take a look at some of my work and projects.
+
+\
+
+## Cool Slides
+
+Quarto slides about tropical cyclones in a blue planet from a galaxy far, far away. [Slides](slides/slides-abc.html)
+
+![](slides/slides-screenshot.png){width=70% fig-align="center"}
+
+
+## Nice Report
+
+A guesswork on the chance of being a Hispanic student enrolled at a higher education institution from a distant civilization.
+[Report](report/hispanic-enrollment.html)
+
+![](report/report-screenshot.png){width=70% fig-align="center"}
+
+
+## Awesome Shiny App
+
+Shiny webapp to create a calculator that simulates investing in an index 
+fund over a certain period of time, assuming a variable rate of return.
+<a href="https://fakeuser.shinyapps.io/shinyapp1" target="_blank">https://fakeuser.shinyapps.io/shinyapp1</a>
+
+![](app-screenshot.png){width=70% fig-align="center"}

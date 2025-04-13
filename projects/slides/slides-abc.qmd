@@ -1,0 +1,113 @@
+---
+title: "Cool Slides"
+author: "Ket Zaly"
+format: 
+  revealjs:
+    slide-number: true
+    show-slide-number: print
+    footer: "[Return to Projects Page](..)"
+    theme: custom.scss
+---
+
+
+```{r include=FALSE}
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+```
+
+
+## Data `storms`
+
+```{r}
+storms
+```
+
+
+# Plotting Storms in 1975
+
+
+## Plot storms' paths (example 1)
+
+```{r}
+#| code-fold: true
+#| code-summary: View Plot Code
+#| echo: true
+storms |>
+  filter(year == 1975) |>
+  ggplot(aes(x = long, y = lat, group = name)) +
+  geom_point() +
+  geom_path() + 
+  labs(title = "North Atlantic Storms (1975)")
+```
+
+
+## Plot storms' paths (example 2)
+
+```{r}
+#| code-fold: true
+#| code-summary: View Plot Code
+#| echo: true
+storms |>
+  filter(year == 1975) |>
+  ggplot(aes(x = long, y = lat, group = name, color = name)) +
+  geom_point(size = 1) +
+  geom_path(arrow = arrow(length = unit(0.1, "inches"))) + 
+  labs(title = "North Atlantic Storms (1975)")
+```
+
+
+## Plot storms' paths (example 3)
+
+```{r}
+#| code-fold: true
+#| code-summary: View Plot Code
+#| echo: true
+storms |>
+  filter(year == 1975) |>
+  ggplot(aes(x = long, y = lat, group = name, color = name)) +
+  geom_point(size = 0.5, alpha = 0.5) +
+  geom_path(arrow = arrow(length = unit(0.1, "inches"))) + 
+  facet_wrap(~ month) +
+  labs(title = "North Atlantic Storms (1975)") +
+  theme_bw()
+```
+
+
+# Maps
+
+
+## Wouldn't this be nice?
+
+```{r map1}
+#| echo: false
+world_countries = ne_countries(returnclass = "sf")
+
+storms75 = storms |> filter(year == 1975)
+
+ggplot() +
+  geom_sf(data = world_countries) +
+  coord_sf(xlim = c(-110, 0), ylim = c(5, 65)) +
+  geom_point(data = storms75, 
+          aes(x = long, y = lat, group = name, color = name),
+          size = 0.5, alpha = 0.5) +
+  geom_path(data = storms75, 
+          aes(x = long, y = lat, group = name, color = name),
+          arrow = arrow(length = unit(0.1, "inches"))) + 
+  theme(panel.background = element_blank(),
+        axis.ticks = element_blank(), # hide tick marks
+        axis.text = element_blank()) + # hide degree values of lat & lon
+  labs(title = "North Atlantic Storms (1975)",
+       x = "", 
+       y = "")
+```
+
+
+## Code
+
+```{r map1}
+#| echo: true
+#| eval: false
+```
+
+

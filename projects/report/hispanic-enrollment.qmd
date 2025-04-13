@@ -1,0 +1,55 @@
+---
+title: "Report"
+author: "Ket Zaly"
+date: "Oct-20-2023"
+format: 
+  html:
+    toc: true
+    number-sections: true
+---
+
+
+::: {.callout-note icon=false}
+## About
+
+In this report, we explore the question
+__What are the chances of being a California Hispanic student attending UC Berkeley?__
+:::
+
+\
+
+## California Hispanic students attending UC Berkeley
+
+Take a 20-some year-old student (e.g. 20, 21, 22 years-old) born in California around 2001-2002.
+
+According to the CDC, <a href="https://www.cdc.gov/nchs/data/nvsr/nvsr52/nvsr52_10.pdf" target="_blank">https://www.cdc.gov/nchs/data/nvsr/nvsr52/nvsr52_10.pdf</a>, 
+there were __529,357__ live births in California in 2002. Of these, __263,061__ (almost 50%) were Hispanic live births.
+
+To make the math easier, let's assume that there were 260,000 Hispanic babies
+born in California per year during the years 2001, 2002, 2003, 2004. Or put
+another way, there were 1,040,000 Hispanic babies born in California during
+these four years.
+
+
+### UC Enrollment Data (2023)
+
+Based on UC enrollment data (see link and figure below), in the Fall 2023 semester there were about 6847
+Hispanic/Latino(a) undergraduate students enrolled in UC Berkeley.
+
+<https://www.universityofcalifornia.edu/about-us/information-center/fall-enrollment-glance>
+
+![Figure 1: UC Berkeley Enrollment Data, Undergraduates Fall 2023](uc-berkeley-enrollment-2023.png)
+
+
+### So, what are the odds?
+
+Well, assuming you are a Hispanic born in California during 2001-2004 or so, your chances of attending UC Berkeley are about:
+
+```{r odds}
+6847 / 1040000
+```
+
+Or roughly 1 in 150 (1/150).
+
+Put another way: for someone born in California somewhere between 2001-2004, their chances of being Hispanic is about 1/2, but their chances of attending UC Berkeley is only about 1/150. From 50% to 0.65% 😲.
+

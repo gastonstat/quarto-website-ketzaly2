@@ -1,0 +1,53 @@
+---
+title: "Resume"
+---
+
+\
+
+## {{< fa user-graduate title="education" >}} Education
+
+__Force Academy__ <br>
+Bachelor in _Jedi Studies_ <br>
+Expected Graduation: Spring 2026
+
+__Force Academy__ <br>
+Bachelor in _Lightsabers Engineering_ <br>
+Expected Graduation: Fall 2026
+
+Relevant coursework: 
+
+- Design & Construction of Lightsabers.
+- Rebel Politics.
+- Concepts in Force Management.
+- Galactic Trading Practices.
+
+
+## {{< fa building title="building" >}} Experience
+
+__Tutor__, Design & Construction of Lightsabers.
+
+__Operations Fellow__, Corellia Student Food Collective.
+
+__Academic Intern__, Lightsabers Science Department.
+
+
+## {{< fa award title="award" >}} Awards
+
+- Award 1
+
+- Award 2
+
+- Award 3
+
+
+
+## {{< fa laptop-code title="laptop" >}} Skills
+
+- Language skills
+
+- Programming skills
+
+- Office skills
+
+- Other skills
+

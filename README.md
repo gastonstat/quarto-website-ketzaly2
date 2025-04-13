@@ -13,7 +13,7 @@ this kind of product for creating a personal website.
 
 ## Details: FontAwesome Icons
 
-Notice that the `page-footer:` option in the `_quarto.yml` file uses icons from _fontawesome_. Thus, to render and/or preview this website, you need to have the quarto __fontawesome__ extension. To install this extension run the following command in RStudio's Terminal:
+Notice that the `page-footer:` option in the `_quarto.yml` file uses icons from _fontawesome_. Also, the file `resume.qmd` uses these icons as well. Thus, to render and/or preview this website, you need to have the quarto __fontawesome__ extension. To install this extension run the following command in RStudio's Terminal:
 
 ```bash
 quarto add quarto-ext/fontawesome

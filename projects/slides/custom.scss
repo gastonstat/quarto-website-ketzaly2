@@ -1,0 +1,60 @@
+/*-- scss:defaults --*/
+
+$font-size: 0.75em;
+
+$body-bg: #fff;
+$body-color: #222;
+$link-color: #42affa;
+$presentation-h1-font-size: 2em;
+$presentation-h2-font-size: 1em !default;
+$presentation-heading-color: #0c76ff !default;
+$code-block-bg: #ededed;
+
+// custom highlighting colors
+$theme-hilit: #ff2626;
+$theme-mdlit: #ff9900;
+$theme-lolit: #aaaaaa;
+$theme-lit: #0c76ff;
+
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+
+.hilit {
+  color: $theme-hilit;
+}
+
+.mdlit {
+  color: $theme-mdlit;
+}
+
+.lolit {
+  color: $theme-lolit;
+}
+
+.lit {
+  color: $theme-lit;
+}
+
+
+.shrink {
+  font-size: 0.75em;
+}
+
+// set your custom colors here
+
+$background-color: #fff !default;
+
+
+
+$presentation-font-size-root: 30px;
+
+// headings
+
+
+
